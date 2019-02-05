@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0">
+    <meta name="description" content="">
+    <title>Yes Theory</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOGO & MENU -->
+    <nav>
+        <img id="logo" src="images/logo-graa.png">
+        <i class="fas fa-sign-out-alt" onclick="window.location.href='login.html'"></i>
+        <i class="fas fa-user" onclick="showProfile()"></i>
+    </nav>
+
+<!-- START OF GREY BOX -->
+    <div class="grey-box">
+
+<!-- TABS -->
+        <button class="tab-button" onclick="openTab1()"><i class="far fa-calendar-alt"></i> My Events</button>
+
+        <button class="tab-button" onclick="openTab2()"><i class="far fa-calendar-plus"></i> Create Event</button>
+
+        <button class="tab-button" onclick="openTab3()"><i class="far fa-envelope"></i> Messages</button>
+
+
+<!-- MY EVENTS -->
+        <div id="my-events" class="tab-content">
+            <h1>My Events</h1>
+            <h3>Participating <i class="fas fa-angle-double-down"></i></h3>
+
+            <a class="event-link my-event-box-lin" href="roskilde.html">
+                <div class="event-box my-event-box">
+                    <img src="images/roskilde.jpg">
+                    <h3>ROSKILDE FESTIVAL - Skal du med i år? Se programmet og læs mere her</h3>
+                    <h4><i class="fas fa-map-marker-alt"></i> Darupvej 19 - 4000 Roskilde</h4>
+                    <h4><i class="fas fa-calendar-alt"></i> 29. June - 6. July</h4>
+                </div>
+            </a>
+
+            <h3>Created <i class="fas fa-angle-double-down"></i></h3>
+            <a class="event-link my-event-box-link" href="event-jazz.html">
+                <div class="event-box my-event-box">
+                    <img src="images/jazz.jpg">
+                    <h3>ÅRHUS JAZZ FESTIVAL - Se hvad du skal høre på jazzfest.dk, eller læs mere her</h3>
+                    <h4><i class="fas fa-map-marker-alt"></i> Århus - Denmark</h4>
+                    <h4><i class="fas fa-calendar-alt"></i> 14. July - 21 July</h4>
+                </div>
+            </a>
+
+        </div>
+
+<!-- CREATE EVENT -->
+        <div id="create-event" class="tab-content">
+            <h1>Create Event</h1>
+            <input placeholder="Title*">
+            <input placeholder="Description*">
+            <div class="image-upload">
+                <p>Upload image (600x200)</p>
+                <button>Upload</button>
+            </div>
+            <div class="create-event-options">
+                <div class="online-option">
+                    <p>Online Event</p>
+                    <button>Yes</button>
+                    <button>No</button>
+                </div>
+                <div class="ticket-option">
+                    <p>Ticket option</p>
+                    <button>Free</button>
+                    <button>Paid</button>
+                </div>
+            </div>
+            <input placeholder="Adress*">
+            <input placeholder="City*">
+            <input placeholder="Zip Code" type="number">
+
+            <p class="start-end">Start</p>
+            <div class="event-start">
+                <input class="date" placeholder="Start Date*" type="date">
+                <input class="time" placeholder="Start Time" type="time">
+            </div>
+            <p class="start-end">End</p>
+            <div class="event-end">
+                <input class="date" placeholder="End Date" type="date">
+                <input class="time" placeholder="End Time" type="time">
+            </div>
+            <button class="create-btn">CREATE</button>
+        </div>
+
+<!-- MESSAGES -->
+        <div id="messages" class="tab-content">
+            <h1>Messages</h1>
+            <input class="message-search" placeholder="Search">
+            <div class="message-container">
+                <div class="message-user">
+                    <img src="images/user1.png">
+                    <h3>Anna Deloire</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user2.png">
+                    <h3>Annabelle Chastin</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user3.png">
+                    <h3>Dean Michaels</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user4.png">
+                    <h3>Eve Kruger</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user5.png">
+                    <h3>Fred Jameson</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user6.png">
+                    <h3>Hannah Baker</h3>
+                </div>
+                <div class="message-user">
+                    <img src="images/user7.png">
+                    <h3>John Matheson</h3>
+                </div>
+            </div>
+        </div>
+
+<!-- FRONT PAGE -->
+        <div class="forside">
+
+            <div class="slide-content slide-display-container">
+                <a href="#">
+                    <img class="mySlides" src="images/forside-foto.jpg" style="width:100%">
+                </a>
+                <a href="roskilde.html">
+                    <img class="mySlides" src="images/forside-foto2.jpg" style="width:100%" onclick="w">
+                </a>
+                <a href="#">
+                    <img class="mySlides" src="images/forside-foto3.jpg" style="width:100%">
+                </a>
+
+
+                <button class="slide-button1" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="slide-button2" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+        </div>
+
+<!-- SEARCH INPUTS -->
+        <div id="search">
+            <input placeholder="Search">
+            <input placeholder="Location">
+            <input placeholder="Date">
+        </div>
+        
+<!-- CATEGORIES FOR SEARCH -->
+        <div id="kategori">
+            <button>SPORT</button>
+            <button>GAMING</button>
+            <button>PARTIES</button>
+            <button>CULTURE</button>
+            <br>
+            <button>TRAVEL</button>
+            <button>SEMINARS</button>
+            <button>PRODUCT LAUNCH</button>
+            <button>OTHER</button>
+        </div>
+
+<!-- LIST OF EVENTS -->
+        <h2 id="recent">RECENT <i class="fas fa-angle-double-down"></i></h2>
+        <div class="events-container">
+            
+<!-- CONTAINER FOR SINGLE EVENT -->
+            <a class="event-link" href="event-jazz.html">
+                <div class="event-box">
+                    <img src="images/jazz.jpg">
+                    <h3>ÅRHUS JAZZ FESTIVAL - Se hvad du skal høre på jazzfest.dk, eller læs mere her</h3>
+                    <h4><i class="fas fa-map-marker-alt"></i> Århus - Denmark</h4>
+                    <h4><i class="fas fa-calendar-alt"></i> 14. July - 21 July</h4>
+                </div>
+            </a>
+
+<!-- CONTAINER FOR SINGLE EVENT -->
+            <a class="event-link" href="yes-table.html">
+                <div class="event-box">
+                    <img src="images/yestable.jpg">
+                    <h3>YES TABLE - Come and try YES THEORY's pop-up restaurant in Venice Beach</h3>
+                    <h4><i class="fas fa-map-marker-alt"></i> Venice Beach - Los Angeles, California</h4>
+                    <h4><i class="fas fa-calendar-alt"></i> 18. August | 6pm - 11pm</h4>
+                </div>
+            </a>
+
+<!-- CONTAINER FOR SINGLE EVENT -->
+            <a class="event-link" href="roskilde.html">
+                <div class="event-box">
+                    <img src="images/roskilde.jpg">
+                    <h3>ROSKILDE FESTIVAL - Skal du med i år? Se programmet og læs mere her</h3>
+                    <h4><i class="fas fa-map-marker-alt"></i> Darupvej 19 - 4000 Roskilde</h4>
+                    <h4><i class="fas fa-calendar-alt"></i> 29. June - 6. July</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+<!-- END OF GREY BOX -->
+    
+<!-- PROFILE CONTAINER -->
+    <div id="profile-container" class="profile-container">
+        <span class="topright2" onclick="showProfile()">x</span>
+        <img src="images/user.png">
+        <h1>Mikkel Hansen</h1>
+        <p>23 | Multimediedesigner</p>
+        <i class="fas fa-cog settings-profile"></i>
+        <p>Change profile picture</p>
+        <p>Personal information</p>
+        <p>Change password</p>
+        <p>Advanced</p>
+    </div>
+
+
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0">
+    <meta name="description" content="">
+    <title>Yes Theory - Event</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOGO, MENU & BACK-BUTTON -->
+    <nav>
+        <a href="index.html">
+        <img id="logo" src="images/logo-graa.png">
+        </a>
+        <i class="fas fa-sign-out-alt" onclick="window.location.href='login.html'"></i>
+        <i class="fas fa-user" onclick="showProfile()"></i>
+    </nav>
+
+    <button class="return-home" onclick="window.location.href='index.html'">➥</button>
+
+<!-- START OF GREY BOX -->
+    <div class="grey-box-event-page">
+
+<!-- CONTAINER FOR SINGLE EVENT -->
+        <div class="event-box-page">
+            <img src="images/jazz.jpg">
+            <h3>ÅRHUS JAZZ FESTIVAL - Se hvad du skal høre på jazzfest.dk, eller læs mere her</h3>
+            <h4><i class="fas fa-map-marker-alt"></i> Århus - Denmark</h4>
+            <h4><i class="fas fa-calendar-alt"></i> 14. July - 21 July</h4>
+            <img class="creator" src="images/user.png" onclick="showProfile()">
+
+            <p class="beskrivelse">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            
+<!-- OTHER PARTICIPANTS & SAY YES BUTTON -->
+            <table class="bottom-menu">
+                <tr>
+                    <th>
+                        <p class="friends-going">Friends going:</p>
+                    <div class="friends-img">
+                        <img src="images/user1.png">
+                        <img src="images/user3.png">
+                        <img src="images/user4.png">
+                        <img src="images/user7.png">
+                    </div>
+                    </th>
+                    <th>
+                    <p class="free-paid-aarhusjazz"><span class="free">Free</span> / <span class="paid">Paid</span></p>
+                    <button id="yes-button" onclick="change()">SAY YES</button>
+                    </th>
+                    <th>
+                    <button class="to-website" onclick="window.location.href='https://jazzfest.dk/'">To Website ></button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+ 
+<!-- PROFILE CONTAINER  -->
+    <div id="profile-container" class="profile-container">
+        <span class="topright2" onclick="showProfile()">x</span>
+        <img src="images/user.png">
+        <h1>Mikkel Hansen</h1>
+        <p>23 | Multimediedesigner</p>
+        <i class="fas fa-cog settings-profile"></i>
+        <p>Change profile picture</p>
+        <p>Personal information</p>
+        <p>Change password</p>
+        <p>Advanced</p>
+    </div>
+
+    
+    <script src="js/checkmark.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+</body>
